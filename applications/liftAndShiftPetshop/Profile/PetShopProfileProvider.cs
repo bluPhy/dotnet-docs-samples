@@ -155,7 +155,7 @@ namespace PetShop.Profile
             UpdateActivityDates(username, false);
         }
 
-        // Profile gettters
+        // Profile getters
         // Retrieve account info
         private static AddressInfo GetAccountInfo(string username)
         {

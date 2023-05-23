@@ -176,7 +176,7 @@ namespace GoogleCloudSamples.Bigtable
 
                 int rowIndex = 0;
 
-                // Read a specific row. Apply a filter to return latest only cell value accross entire row.
+                // Read a specific row. Apply a filter to return latest only cell value across entire row.
                 Row rowRead = bigtableClient.ReadRow(
                     tableName, rowKey: rowKeyPrefix + rowIndex, filter: filter);
                 Console.WriteLine(
@@ -187,7 +187,7 @@ namespace GoogleCloudSamples.Bigtable
 
                 // [START bigtable_hw_scan_with_filter]
                 Console.WriteLine("Read all rows using streaming");
-                // stream the content of the whole table. Apply a filter to return latest only cell values accross all rows.
+                // stream the content of the whole table. Apply a filter to return latest only cell values across all rows.
                 ReadRowsStream responseRead = bigtableClient.ReadRows(tableName, filter: filter);
 
                 Task printRead = PrintReadRowsAsync();

@@ -46,7 +46,7 @@ namespace GoogleHomeAspNetCoreDemoServer.Dialogflow.Intents
 
         /// <summary>
         /// Base method that simply returns null.
-        /// Sublasses can override to provide an implementation.
+        /// Subclasses can override to provide an implementation.
         /// </summary>
         /// <param name="req">Webhook request</param>
         /// <returns>null</returns>

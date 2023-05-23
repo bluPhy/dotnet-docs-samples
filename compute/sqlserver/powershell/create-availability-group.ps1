@@ -134,7 +134,7 @@ else {
 
 ################################################################################
 # Create a shared folder for initial backup used by Availability Groups
-# We choose Node 2, but it can be any network share accesible by both nodes
+# We choose Node 2, but it can be any network share accessible by both nodes
 ################################################################################
 Invoke-Command -ComputerName $node2 -ScriptBlock { 
   param($sql_backup, $share_name, $node1)

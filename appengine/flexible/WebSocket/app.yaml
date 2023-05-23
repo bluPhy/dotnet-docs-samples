@@ -18,7 +18,7 @@ resources:
 
 # For applications which can take advantage of session affinity
 # (where the load balancer will attempt to route multiple connections from
-# the same user to the same App Engine instance), uncomment the folowing:
+# the same user to the same App Engine instance), uncomment the following:
 
 # network:
 #   session_affinity: true

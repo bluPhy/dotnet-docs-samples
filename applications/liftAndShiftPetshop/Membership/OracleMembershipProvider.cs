@@ -187,7 +187,7 @@ namespace PetShop.Membership
             if (String.IsNullOrEmpty(name))
                 name = "OracleMembershipProvider";
 
-            // Get descripton
+            // Get description
             if (string.IsNullOrEmpty(config["description"]))
             {
                 config.Remove("description");
@@ -207,7 +207,7 @@ namespace PetShop.Membership
             _minRequiredPasswordLength = GetIntValue(config, "minRequiredPasswordLength", 7, false, 128);
             _minRequiredNonalphanumericCharacters = GetIntValue(config, "minRequiredNonalphanumericCharacters", 1, true, 128);
 
-            // Get hash algorhithm
+            // Get hash algorithm
             _hashAlgorithmType = config["hashAlgorithmType"];
             if (String.IsNullOrEmpty(_hashAlgorithmType))
                 _hashAlgorithmType = "SHA1";

@@ -52,7 +52,7 @@ namespace GoogleCloudSamples.Controllers
                 }
                 else
                 {
-                    throw new ArgumentOutOfRangeException("Pleae limit count in range of 1 ~ 100");
+                    throw new ArgumentOutOfRangeException("Please limit count in range of 1 ~ 100");
                 }
             }
             catch (Exception ex)

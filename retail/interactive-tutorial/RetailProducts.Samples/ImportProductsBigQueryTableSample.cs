@@ -26,7 +26,7 @@ public class ImportProductsBigQueryTableSample
     /// <summary>
     /// Get import products BigQuery request.
     /// </summary>
-    /// <param name="reconciliationMode">The preffered reconciliation mode.</param>
+    /// <param name="reconciliationMode">The preferred reconciliation mode.</param>
     /// <param name="projectId">The current project id.</param>
     /// <returns>The import product request.</returns>
     public static ImportProductsRequest GetImportProductsBigQueryRequest(ImportProductsRequest.Types.ReconciliationMode reconciliationMode, string projectId)
@@ -81,7 +81,7 @@ public class ImportProductsBigQueryTableSample
         Console.WriteLine(importResponse.Name);
         Console.WriteLine();
 
-        Console.WriteLine("Please wait till opeartion is done");
+        Console.WriteLine("Please wait till operation is done");
         Console.WriteLine();
 
         Operation<ImportProductsResponse, ImportMetadata> importResult = importResponse.PollUntilCompleted();

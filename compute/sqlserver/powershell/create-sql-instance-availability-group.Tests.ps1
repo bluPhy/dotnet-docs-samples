@@ -54,8 +54,8 @@ $domain_pwd = -join(33..122 | %{[char]$_} | Get-Random -C 36)
 . "$path\create-sql-instance-availability-group.ps1"
 
 
-## Run tests to verify that the PowerShell script ran succesfully
-Write-Host "$(Get-Date) Testing that Availability Group was created succesfully"
+## Run tests to verify that the PowerShell script ran successfully
+Write-Host "$(Get-Date) Testing that Availability Group was created successfully"
 
 ## Validate that the Availability Group was created
 Describe "Availability-Group-Created" {

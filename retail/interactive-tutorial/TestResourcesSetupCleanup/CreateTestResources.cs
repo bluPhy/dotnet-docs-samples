@@ -162,7 +162,7 @@ public class CreateTestResources
         var importResponse = client.ImportProducts(importGcsRequest);
 
         Console.WriteLine("\nThe operation was started: \n" + importResponse.Name);
-        Console.WriteLine("\nPlease wait till opeartion is done");
+        Console.WriteLine("\nPlease wait till operation is done");
 
         var importResult = importResponse.PollUntilCompleted();
 

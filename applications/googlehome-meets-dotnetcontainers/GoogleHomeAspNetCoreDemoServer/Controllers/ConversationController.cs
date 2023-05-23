@@ -28,7 +28,7 @@ namespace GoogleHomeAspNetCoreDemoServer.Controllers
         private readonly DialogflowApp _dialogFlowApp;
   
         /// <summary>
-        /// Consructor for Conversation controller.
+        /// Constructor for Conversation controller.
         /// </summary>
         /// <param name="exceptionLogger">Exception logger</param>
         /// <param name="logger">Regular logger</param>

@@ -43,7 +43,7 @@ paths:
       - "application/json"
       responses:
         200:
-          description: "Authenication info."
+          description: "Authentication info."
           schema:
             $ref: "#/definitions/authInfoResponse"
       x-security:
@@ -60,7 +60,7 @@ paths:
       - "application/json"
       responses:
         200:
-          description: "Authenication info."
+          description: "Authentication info."
           schema:
             $ref: "#/definitions/authInfoResponse"
       x-security:

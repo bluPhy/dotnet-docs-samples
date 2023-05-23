@@ -198,7 +198,7 @@ $results = Invoke-Command -ScriptBlock {
 
 # If the command fails, run it again but this time show the error message
 if ( !($lastexitcode -eq 0)) {
-  Write-Host "An error ocurred when trying to generate a password for $node1"
+  Write-Host "An error occurred when trying to generate a password for $node1"
   Invoke-Command -ScriptBlock { 
     gcloud compute reset-windows-password $node1 --zone $zone `
       --user $config_user --quiet
@@ -220,7 +220,7 @@ $results = Invoke-Command -ScriptBlock {
 
 # If the command fails, run it again but this time show the error message
 if ( !($lastexitcode -eq 0)) {
-  Write-Host "An error ocurred when trying to generate a password for $node2"
+  Write-Host "An error occurred when trying to generate a password for $node2"
   Invoke-Command -ScriptBlock { 
     gcloud compute reset-windows-password $node2 --zone $zone `
       --user $config_user --quiet
@@ -415,7 +415,7 @@ Copy-Item ".\parameters-config.ps1" `
   -ToSession $session1
 
 # Do a remote session to Node 1 to create a scheduled job to setup the cluster.
-# Seting up the cluster requires connecting to more than one server which creates
+# Setting up the cluster requires connecting to more than one server which creates
 # a double-hop issue. We create a scheduled job to setup the cluster outside of
 # our WinRM connection to avoid this issue.
 Invoke-Command -Session $session1 -ScriptBlock {

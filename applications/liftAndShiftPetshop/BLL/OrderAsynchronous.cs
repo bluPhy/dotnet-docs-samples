@@ -18,7 +18,7 @@ namespace PetShop.BLL
 {
     /// <summary>
     /// This is an asynchronous implementation of IOrderStrategy 
-    /// By implemeneting IOrderStrategy interface, developer can add a new order insert strategy without re-compiling the whole BLL 
+    /// By implementing IOrderStrategy interface, developer can add a new order insert strategy without re-compiling the whole BLL 
     /// </summary>
     public class OrderAsynchronous : IOrderStrategy
     {

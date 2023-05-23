@@ -51,7 +51,7 @@ public class ErrorReportingSample
         // Create the report and execute the request.
         var reporter = ReportErrorsServiceClient.Create();
 
-        // Get the project ID from the environement variables.
+        // Get the project ID from the environment variables.
         var projectName = new ProjectName(
             Environment.GetEnvironmentVariable("GOOGLE_PROJECT_ID"));
 

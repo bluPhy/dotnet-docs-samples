@@ -477,7 +477,7 @@ public class SpannerFixture : IAsyncLifetime, ICollectionFixture<SpannerFixture>
     public async Task RunWithTemporaryDatabaseAsync(string instanceId, Func<string, Task> testFunction,
         params string[] extraStatements)
     {
-        // For temporary DBs we don't need a time based ID, as we delete them inmediately.
+        // For temporary DBs we don't need a time based ID, as we delete them immediately.
         var databaseId = GenerateId("temp-db-");
         await RunWithTemporaryDatabaseAsync(instanceId, databaseId, testFunction, extraStatements);
     }

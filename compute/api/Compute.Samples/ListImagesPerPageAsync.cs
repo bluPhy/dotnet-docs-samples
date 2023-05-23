@@ -40,7 +40,7 @@ public class ListImagesPerPageAsyncSample
             MaxResults = 10
         };
 
-        // Call the AsRawResponses() method of the returned image sequence to access the page sequece instead
+        // Call the AsRawResponses() method of the returned image sequence to access the page sequence instead
         // This allows you to have more granular control of iteration over paginated results from the API.
         // Each time you access the next page, the library retrieves that page from the API.
         int pageIndex = 0;

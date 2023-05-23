@@ -149,7 +149,7 @@ namespace Filters
 
         // [START bigtable_filters_limit_col_range]
         /// <summary>
-        /// /// Read using a qualifer range filter from an existing table.
+        /// /// Read using a qualifier range filter from an existing table.
         ///</summary>
         /// <param name="projectId">Your Google Cloud Project ID.</param>
         /// <param name="instanceId">Your Google Cloud Bigtable Instance ID.</param>

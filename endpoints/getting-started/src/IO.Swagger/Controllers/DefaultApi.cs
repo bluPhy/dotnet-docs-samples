@@ -39,7 +39,7 @@ namespace IO.Swagger.Controllers
         ///
         /// </summary>
         /// <remarks>Returns the requests&#39; authentication information.</remarks>
-        /// <response code="200">Authenication info.</response>
+        /// <response code="200">Authentication info.</response>
         [HttpGet]
         [Route("/auth/info/googleidtoken")]
         [SwaggerOperation("AuthInfoGoogleIdToken")]
@@ -58,7 +58,7 @@ namespace IO.Swagger.Controllers
         ///
         /// </summary>
         /// <remarks>Returns the requests&#39; authentication information.</remarks>
-        /// <response code="200">Authenication info.</response>
+        /// <response code="200">Authentication info.</response>
         [HttpGet]
         [Route("/auth/info/googlejwt")]
         [SwaggerOperation("AuthInfoGoogleJwt")]

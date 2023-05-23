@@ -44,7 +44,7 @@ $subnet1_name = 'wsfcsubnet1'  # Name of Subnet 1. Node 1 will reside here.
 $subnet2_name = 'wsfcsubnet2'  # Name of Subnet 2. Node 2 will reside here.
 $subnet3_name = 'wsfcsubnet3'  # Name of Subnet 3. The domain controller will reside here but it can also be one of the other 2 subnets.
 
-# Create 3 subnets. One for each node and the third one for the domain controller. Change as appropiate to match your network requirements.
+# Create 3 subnets. One for each node and the third one for the domain controller. Change as appropriate to match your network requirements.
 $subnet1 = "10.0.0.0/24" # Subnet1 netmask
 $subnet2 = "10.1.0.0/24" # Subnet2 netmask
 $subnet3 = "10.2.0.0/24" # Subnet3 netmask

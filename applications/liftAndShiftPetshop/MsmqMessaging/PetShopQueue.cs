@@ -19,7 +19,7 @@ namespace PetShop.MSMQMessaging
 {
     /// <summary>
     /// This could be a base class for all PetShop MSMQ messaging implementation as 
-    /// it provides a basic implementation for sending and receving messages to and from transactional queue
+    /// it provides a basic implementation for sending and receiving messages to and from transactional queue
     /// </summary>
     public class PetShopQueue : IDisposable
     {

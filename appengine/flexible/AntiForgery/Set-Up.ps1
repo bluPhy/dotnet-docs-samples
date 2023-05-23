@@ -33,7 +33,7 @@
 #
 #.PARAMETER serviceAccountEmail
 # Instead of using the App Engine default service account, use this service
-# acccount.
+# account.
 #
 #.PARAMETER projectId
 # The Google Cloud Project Id.  Usually not needed because it can be determined

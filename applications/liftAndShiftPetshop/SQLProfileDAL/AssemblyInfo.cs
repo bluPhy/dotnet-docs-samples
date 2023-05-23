@@ -22,7 +22,7 @@ using System.Runtime.ConstrainedExecution;
 [assembly: ComVisible(false)]
 [assembly: ReliabilityContract(Consistency.WillNotCorruptState, Cer.MayFail)]
 
-[assembly: AssemblyTitle(".NET Pet Shop Sql Server Profile DAL Implementaion")]
+[assembly: AssemblyTitle(".NET Pet Shop Sql Server Profile DAL Implementation")]
 [assembly: AssemblyDescription(".NET Pet Shop DAL Components")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Microsoft Corporation")]

@@ -45,7 +45,7 @@ namespace PetShop.BLL
         /// <param name="order">All the information about the order</param>
         public void Insert(OrderInfo order)
         {
-            // Call credit card procesor
+            // Call credit card processor
             ProcessCreditCard(order);
 
             // Insert the order (a)synchrounously based on configuration
@@ -63,7 +63,7 @@ namespace PetShop.BLL
             Random rnd = new Random();
             order.AuthorizationNumber = (int)(rnd.NextDouble() * int.MaxValue);
 
-            // Check if authorisation succeded
+            // Check if authorisation succeeded
             if (!order.AuthorizationNumber.HasValue)
                 throw new ApplicationException(CREDIT_CARD_ERROR_MSG);
         }

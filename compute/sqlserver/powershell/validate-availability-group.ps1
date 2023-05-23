@@ -43,8 +43,8 @@ $ip_address1 = $(gcloud compute instances describe $node1 --format='get(networkI
 $ip_address2 = $(gcloud compute instances describe $node2 --format='get(networkInterfaces[0].accessConfigs[0].natIP)')
 
 
-## Run tests to verify that the PowerShell script ran succesfully
-Write-Host "$(Get-Date) Testing that Availability Group was created succesfully"
+## Run tests to verify that the PowerShell script ran successfully
+Write-Host "$(Get-Date) Testing that Availability Group was created successfully"
 
 ## Validate that the Availability Group was created
 
@@ -72,7 +72,7 @@ $results = Invoke-Command -ComputerName $ip_address1 -UseSSL `
 
 
 # Display the results
-Write-Host "`r`n`r`nVerify that both nodes are syncronized"
+Write-Host "`r`n`r`nVerify that both nodes are synchronized"
 $results | FT
 
 

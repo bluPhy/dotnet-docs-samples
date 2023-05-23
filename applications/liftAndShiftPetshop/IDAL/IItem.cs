@@ -16,7 +16,7 @@ using System;
 using System.Collections.Generic;
 
 //References to PetShop specific libraries
-//PetShop busines entity library
+//PetShop business entity library
 using PetShop.Model;
 
 namespace PetShop.IDAL

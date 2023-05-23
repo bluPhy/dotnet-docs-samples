@@ -288,7 +288,7 @@ namespace GoogleCloudSamples.Bigtable
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Exception retreiving {instanceId} instance");
+                Console.WriteLine($"Exception retrieving {instanceId} instance");
                 Console.WriteLine(ex.Message);
             }
             // [END bigtable_get_instance]
@@ -336,7 +336,7 @@ namespace GoogleCloudSamples.Bigtable
             Console.WriteLine("Print current instance information");
             GetInstance(instanceId);
 
-            // Please refer to the link below for the full list of availabel locations:
+            // Please refer to the link below for the full list of available locations:
             // https://cloud.google.com/bigtable/docs/locations
             string zone2 = "us-east1-d";
 
@@ -345,7 +345,7 @@ namespace GoogleCloudSamples.Bigtable
             // Create an additional cluster with cluster id "ssd-cluster2" with 3 nodes and location us-east1-d.
             // Additional cluster can only be created in PRODUCTION type instance.
             // Additional cluster must have same storage type as existing cluster.
-            // Please read about routing_policy for more information on mutli cluster instances.
+            // Please read about routing_policy for more information on multi cluster instances.
             // https://cloud.google.com/bigtable/docs/reference/admin/rpc/google.bigtable.admin.v2#google.bigtable.admin.v2.AppProfile.MultiClusterRoutingUseAny
             // Cluster to be created within the instance.
             Cluster myCluster2 = new Cluster
@@ -393,7 +393,7 @@ namespace GoogleCloudSamples.Bigtable
 
             Console.WriteLine("Deleting cluster");
             // [START bigtable_delete_cluster]
-            // Deltes cluster "ssd-cluster2" from instance.
+            // Deletes cluster "ssd-cluster2" from instance.
             // At least one cluster must remain on an instance.
             // Initialize request argument(s)
             DeleteClusterRequest request = new DeleteClusterRequest
@@ -440,7 +440,7 @@ namespace GoogleCloudSamples.Bigtable
                 Console.WriteLine("Waiting for operation to complete...");
                 bigtableInstanceAdminClient.DeleteInstance(request);
                 // [END bigtable_delete_instance]
-                Console.WriteLine($"Instance {instanceId} deleted successfuly");
+                Console.WriteLine($"Instance {instanceId} deleted successfully");
                 Console.WriteLine("Print list of instances in the project after instance is deleted");
                 ListInstances();
                 // [START bigtable_delete_instance]

@@ -103,7 +103,7 @@ public class ImportUserEventsInlineSourceSample
         Console.WriteLine(importResponse.Name);
         Console.WriteLine();
 
-        Console.WriteLine("Please wait till opeartion is done");
+        Console.WriteLine("Please wait till operation is done");
         Console.WriteLine();
 
         Operation<ImportUserEventsResponse, ImportMetadata> importResult = importResponse.PollUntilCompleted();
