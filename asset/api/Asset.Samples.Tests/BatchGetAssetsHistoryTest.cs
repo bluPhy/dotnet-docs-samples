@@ -37,7 +37,7 @@ public class BatchGetAssetsHistoryTest
 
         _fixture.Retry.Eventually(() =>
         {
-            // We subtract 5 minutes from for the start time, because sometimes our clock and the server
+            // We substract 5 minutes from for the start time, because sometimes our clock and the server
             // clock are not synced.
             var result = _sample.BatchGetAssetsHistory(
                 new string[] { assetName }, DateTimeOffset.UtcNow - TimeSpan.FromMinutes(5), _fixture.ProjectId);
